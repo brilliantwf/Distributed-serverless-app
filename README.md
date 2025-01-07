@@ -85,7 +85,7 @@ cat cdk.out/LambdaContainerFunctionStack.template.json
 cdk deploy
 ```
 
-
-
-
->>>>>>> e673553 (Initial commit)
+待完成工作:
+1. 基于输入的域名创建Route53的记录,Route53的记录使用创建在多个区域的Lambda URL,并创建基于延迟的路由
+2. 修改Lambda edge代码,使其回源到上面创建的Route53的记录
+3. 多区域部署优化,部署时可以选择区域部署Lambda URL
